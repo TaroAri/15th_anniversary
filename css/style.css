@@ -2,11 +2,11 @@
 
 body {
   margin: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000;
-  font-family: "Arial";
+  font-family: "Noto Sans JP";
   font-weight: normal;
-  font-size: 30px;
+  font-size: 1.25vw;
 }
 
 #wrapper {
@@ -15,6 +15,197 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
+/* HEADER */
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1vw;
+}
+
+.header a img {
+  width: 12vw;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1vw;
+  font-family: "Noto Sans";
+}
+
+.app {
+  background-color: #ffffff;
+  padding: 0.5vw 1vw 0.3vw;
+}
+
+/* MESSAGE */
+.yasuda_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60vw;
+  background-image: url(../img/message_bg.jpg);
+  background-size: cover;
+}
+
+.sub_tit {
+  color: #1567F4;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.section_tit {
+  margin-top: 1vw;
+  color: #EC2AB2;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.message_text {
+  width: 60vw;
+  margin: 10vw auto 0;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.plus_message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  margin: 5vw auto 0;
+}
+
+.plus_message img {
+  width: 22vw;
+}
+
+.plus_message_text {
+  overflow-wrap: anywhere;
+  width: 40vw;
+  text-align: left;
+  font-family: "Noto Sans";
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.plus_message_text h3 {
+  margin-bottom: 1vw;
+}
+
+.plus_message_text article p {
+  margin-top: 3vw;
+  font-family: "Noto Sans JP";
+  font-size: 1.3vw;
+}
+
+/* PROGRAM */
+.program {
+  margin-top: 10vw;
+}
+
+.program img {
+  margin: 5vw auto 0;
+  padding: 5vw 10vw;
+  background-color: #E2E2E2;
+  width: 70vw;
+}
+
+/* COST */
+.cost {
+  margin-top: 10vw;
+}
+
+.cost_wp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(43vw, 1fr));
+  justify-items: center;
+  gap: 2vw;
+  width: 88vw;
+  margin: 5vw auto 0;
+}
+
+.cost_wp img {
+  width: 43vw;
+}
+
+/* access */
+.access {
+  margin-top: 10vw;
+}
+
+.access_text {
+  width: 40vw;
+  margin: 5vw auto 0;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.4vw;
+  line-height: 1.5;
+}
+
+.map {
+  width: 100vw;
+  height: 40vw;
+  margin-top: 10vw;
+}
+
+/* CONTACT */
+.contact {
+  margin-top: 10vw;
+}
+
+.form {
+  margin-top: 5vw;
+  width: 80vw;
+  height: 130vw;
+}
+
+/* FOOTER */
+.footer {
+  width: 80vw;
+  max-width: 480px;
+  margin: 10vw auto 5vw;
+}
+.footer h2 {
+  margin-bottom: 1vw;
+  color: #EC2AB2;
+  font-size: clamp(2px, 8vw, 48px);
+  font-weight: bold;
+}
+
+.footer p {
+  margin-bottom: 1vw;
+  font-size: clamp(2px, 3vw, 20px);
+  font-weight: bold;
+}
+
+.sns_icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin: 3vw auto 0;
+}
+
+.sns_icons a img {
+  width: 6vw;
+  max-width: 60px;
+}
+
+.anniversary_logo {
+  width: 60vw;
+  max-width: 360px;
+  margin: 4vw auto;
+}
+
+
 
 
 @media screen and (max-width: 500px) {
