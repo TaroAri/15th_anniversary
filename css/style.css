@@ -126,7 +126,6 @@ body {
 .cost_wp {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(43vw, 1fr));
-  justify-items: center;
   gap: 2vw;
   width: 88vw;
   margin: 5vw auto 0;
@@ -209,5 +208,12 @@ body {
 
 
 @media screen and (max-width: 500px) {
-  
+  .cost_wp {
+    grid-template-columns: repeat(1, minmax(43vw, 1fr));
+    justify-items: center;
+  }
+
+  .cost_wp img {
+    width: 80vw;
+  }
 }
