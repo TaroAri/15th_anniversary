@@ -16,6 +16,10 @@ body {
   text-align: center;
 }
 
+span {
+  display: inline-block;
+}
+
 /* HEADER */
 .header {
   position: fixed;
@@ -111,13 +115,6 @@ body {
 /* PROGRAM */
 .program {
   margin-top: 10vw;
-}
-
-.program img {
-  margin: 5vw auto 0;
-  padding: 5vw 10vw;
-  background-color: #E2E2E2;
-  width: 90%;
 }
 
 .program_wp {
