@@ -9,11 +9,20 @@ $('#g-nav a[href*="#"]').click(function () {//全てのページ内リンクに�
 $(".openbtn").click(function () {//ボタンがクリックされたら
 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-});
+	if ($("body").css("overflow") === "hidden") {
+		// もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+		$("body").css({ height: "", overflow: "" });
+  
+	} else {
+		// そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+		$("body").css({ height: "100%", overflow: "hidden" });
+	}
 
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
-    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+	$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+		$(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+		$("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+		$("body").css({ height: "", overflow: "" });
+	});
 });
 
 //フェードイン
