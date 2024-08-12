@@ -15,3 +15,17 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
+
+//フェードイン
+let fadeInTarget = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < fadeInTarget.length; i++) {
+    const rect = fadeInTarget[i].getBoundingClientRect().top;
+    const scroll = document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+    if (scroll > offset - windowHeight + 150) {
+      fadeInTarget[i].classList.add('scroll-in');
+    }
+  }
+});
