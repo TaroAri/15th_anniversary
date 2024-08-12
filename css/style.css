@@ -39,7 +39,7 @@ span {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 1vw;
+  gap: 2vw;
   font-family: "Noto Sans";
 }
 
@@ -56,7 +56,6 @@ span {
   gap: 3vw;
   width: 100%;
   height: 100vh;
-  /* margin-left: calc(50% - 50vw); */
   padding: 2vw 4vw;
   background-color: #E2E2E2;
 }
@@ -116,7 +115,6 @@ span {
   background-image: url(../img/message_bg.jpg);
   background-position: center;
   background-size: cover;
-  /* margin-left: calc(50% - 50vw); */
   padding: 10vw 0;
 }
 
@@ -234,7 +232,6 @@ span {
   width: 100%;
   height: 40vw;
   margin-top: 10vw;
-  /* margin-left: calc(50% - 50vw); */
 }
 
 /* CONTACT */
@@ -390,6 +387,7 @@ span {
   .home {
     flex-direction: column-reverse;
     justify-content: end;
+    height: 90vh;
   }
 
   .home_left {
