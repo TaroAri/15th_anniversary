@@ -32,6 +32,7 @@ span {
 
 .header a img {
   width: 12vw;
+  min-width: 60px;
 }
 
 .header nav ul {
@@ -234,18 +235,18 @@ span {
 
 @media screen and (max-width: 500px) {
 
-  #g-nav{
+  #g-nav {
     position: absolute;
     z-index: 999;
     top:0;
     right: -120%;
-    width: 50vw;
+    width: 70vw;
     height: 50vh;
-    background:#999;
+    background:#E2E2E2;
     transition: all 0.6s;
   }
 
-  #g-nav.panelactive{
+  #g-nav.panelactive {
     right: 0;
   }
 
@@ -278,8 +279,8 @@ span {
     top: 0;
     right: 0;
     cursor: pointer;
-    width: 50px;
-    height:50px;
+    width: 60px;
+    height: 60px;
   }
     
   .openbtn span{
@@ -294,22 +295,22 @@ span {
   }
 
   .openbtn span:nth-of-type(1) {
-    top:15px;	
+    top:14px;
   }
 
   .openbtn span:nth-of-type(2) {
-    top:23px;
+    top:24px;
   }
 
   .openbtn span:nth-of-type(3) {
-    top:31px;
+    top:34px;
   }
 
   .openbtn.active span:nth-of-type(1) {
       top: 18px;
       left: 18px;
       transform: translateY(6px) rotate(-45deg);
-      width: 30%;
+      width: 45%;
   }
 
   .openbtn.active span:nth-of-type(2) {
@@ -320,7 +321,7 @@ span {
       top: 30px;
       left: 18px;
       transform: translateY(-6px) rotate(45deg);
-      width: 30%;
+      width: 45%;
   }
 
   .header nav ul {
