@@ -47,6 +47,9 @@ span {
   padding: 0.5vw 1vw 0.3vw;
 }
 
+/* HOME */
+
+
 /* MESSAGE */
 .yasuda_message {
   display: flex;
@@ -114,7 +117,7 @@ span {
 
 /* PROGRAM */
 .program {
-  margin-top: 10vw;
+  padding-top: 10vw;
 }
 
 .program_wp {
@@ -133,7 +136,7 @@ span {
 
 /* COST */
 .cost {
-  margin-top: 10vw;
+  padding-top: 10vw;
 }
 
 .cost_wp {
@@ -152,7 +155,7 @@ span {
 
 /* access */
 .access {
-  margin-top: 10vw;
+  padding-top: 10vw;
 }
 
 .access_text {
@@ -179,7 +182,7 @@ span {
 
 /* CONTACT */
 .contact {
-  margin-top: 10vw;
+  padding-top: 10vw;
 }
 
 .form {
@@ -230,6 +233,99 @@ span {
 
 
 @media screen and (max-width: 500px) {
+
+  #g-nav{
+    position: absolute;
+    z-index: 999;
+    top:0;
+    right: -120%;
+    width: 50vw;
+    height: 50vh;
+    background:#999;
+    transition: all 0.6s;
+  }
+
+  #g-nav.panelactive{
+    right: 0;
+  }
+
+  #g-nav ul {
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #g-nav li{
+    list-style: none;
+    text-align: center;
+  }
+
+  #g-nav li a{
+    color: #333;
+    text-decoration: none;
+    padding:10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+
+  .openbtn{
+    position:fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+  }
+    
+  .openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #666;
+    width: 45%;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    top:15px;	
+  }
+
+  .openbtn span:nth-of-type(2) {
+    top:23px;
+  }
+
+  .openbtn span:nth-of-type(3) {
+    top:31px;
+  }
+
+  .openbtn.active span:nth-of-type(1) {
+      top: 18px;
+      left: 18px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 30%;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .openbtn.active span:nth-of-type(3){
+      top: 30px;
+      left: 18px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 30%;
+  }
+
+  .header nav ul {
+    display: block;
+  }
 
   .plus_message {
     flex-wrap: wrap;
