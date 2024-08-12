@@ -10,8 +10,7 @@ body {
 }
 
 #wrapper {
-  width: 100vw;
-  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -26,7 +25,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   padding: 1vw;
 }
 
@@ -49,18 +48,74 @@ span {
 }
 
 /* HOME */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 3vw;
+  width: 100%;
+  height: 100vh;
+  /* margin-left: calc(50% - 50vw); */
+  padding: 2vw 4vw;
+  background-color: #E2E2E2;
+}
 
+.home_left {
+  text-align: left;
+}
+
+.date {
+  margin-bottom: 2vw;
+  font-size: clamp(40px, 7vw, 89px);
+}
+
+.date span {
+  font-size: clamp(30px, 4vw, 56px);
+}
+
+.home h1 {
+  margin-bottom: 2vw;
+}
+
+.home h1 span {
+  margin-bottom: 1vw;
+  padding: 1vw;
+  font-size: clamp(20px, 4vw, 42px);
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.home_left .home_text {
+  font-size: clamp(10px, 2vw, 17px);
+  font-weight: bold;
+  line-height: 2;
+}
+
+.home_right button {
+  padding: 1.2vw 2vw 1vw;
+  color: #ffffff;
+  background-color: #B8B8B8;
+  letter-spacing: 0.2rem;
+  transition: .3s;
+}
+
+.home_right button:hover {
+  color: #B8B8B8;
+  font-weight: bold;
+  background-color: #ffffff;
+  transition: .3s;
+}
 
 /* MESSAGE */
 .yasuda_message {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-image: url(../img/message_bg.jpg);
   background-position: center;
   background-size: cover;
-  margin-left: calc(50% - 50vw);
+  /* margin-left: calc(50% - 50vw); */
   padding: 10vw 0;
 }
 
@@ -154,14 +209,12 @@ span {
   width: 100%;
 }
 
-/* access */
+/* ACCESS */
 .access {
   padding-top: 10vw;
 }
 
 .access_text {
-  width: 50%;
-  min-width: 340px;
   margin: 5vw auto 0;
   text-align: center;
   font-weight: bold;
@@ -175,10 +228,10 @@ span {
 }
 
 .map {
-  width: 100vw;
+  width: 100%;
   height: 40vw;
   margin-top: 10vw;
-  margin-left: calc(50% - 50vw);
+  /* margin-left: calc(50% - 50vw); */
 }
 
 /* CONTACT */
@@ -189,6 +242,7 @@ span {
 .form {
   margin-top: 5vw;
   width: 80vw;
+  max-width: 1440px;
   height: 130vw;
 }
 
@@ -244,6 +298,8 @@ span {
     height: 50vh;
     background:#E2E2E2;
     transition: all 0.6s;
+    border-bottom: #ffffff 2px solid;
+    border-left: #ffffff 2px solid;
   }
 
   #g-nav.panelactive {
@@ -326,6 +382,26 @@ span {
 
   .header nav ul {
     display: block;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    justify-content: end;
+  }
+
+  .home_left {
+    order: 2;
+    padding-bottom: 3vw;
+  }
+
+  .home_right {
+    order: 1;
+    padding-bottom: 3vw;
+  }
+
+  .home_right button {
+    padding: 2vw 3vw;
+
   }
 
   .plus_message {
