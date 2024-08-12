@@ -109,7 +109,7 @@ span {
 .plus_message_text article p {
   margin-top: 3vw;
   font-family: "Noto Sans JP";
-  font-size: clamp(12px, 1.3vw, 20px);
+  font-size: clamp(10px, 1.3vw, 20px);
 }
 
 /* PROGRAM */
