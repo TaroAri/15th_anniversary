@@ -208,6 +208,11 @@ body {
 
 
 @media screen and (max-width: 500px) {
+
+  .plus_message {
+    flex-wrap: wrap;
+  }
+
   .cost_wp {
     grid-template-columns: repeat(1, minmax(43vw, 1fr));
     justify-items: center;
