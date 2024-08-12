@@ -98,7 +98,7 @@ span {
   width: 40vw;
   text-align: left;
   font-family: "Noto Sans";
-  font-size: 1.5vw;
+  font-size: clamp(12px, 1.5vw, 24px);
   font-weight: bold;
 }
 
@@ -109,7 +109,7 @@ span {
 .plus_message_text article p {
   margin-top: 3vw;
   font-family: "Noto Sans JP";
-  font-size: 1.3vw;
+  font-size: clamp(12px, 1.3vw, 20px);
 }
 
 /* PROGRAM */
