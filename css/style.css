@@ -59,14 +59,14 @@ body {
 .sub_tit {
   color: #1567F4;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: clamp(12px, 1.5vw, 21vw);
 }
 
 .section_tit {
   margin-top: 1vw;
   color: #EC2AB2;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: clamp(24px, 3vw, 42px);
 }
 
 .message_text {
