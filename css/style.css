@@ -32,14 +32,37 @@ span {
   transform: translate(0, 0);
 } */
 
+/* common */
+.sub_tit {
+  color: #1567F4;
+  font-weight: bold;
+  font-size: clamp(12px, 1.5vw, 21vw);
+}
+
+.section_tit {
+  margin-top: 1vw;
+  color: #EC2AB2;
+  font-weight: bold;
+  font-size: clamp(24px, 3vw, 42px);
+}
+
+.header a:hover,
+.access_text p a:hover,
+.sns_icons a img:hover {
+  opacity: 0.6;
+}
+
 /* HEADER */
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1vw;
+  
 }
 
 .header a img {
@@ -57,11 +80,7 @@ span {
   font-weight: bold;
 }
 
-.header nav ul li :hover{
-  opacity: 0.6;
-}
-
-.app {
+.app a {
   background-color: #ffffff;
   padding: 0.5vw 1vw;
 }
@@ -110,7 +129,7 @@ span {
 }
 
 .home_right button {
-  padding: 1.2vw 2vw 1vw;
+  padding: 1.2vw 2vw;
   color: #ffffff;
   background-color: #B8B8B8;
   letter-spacing: 0.2rem;
@@ -136,19 +155,6 @@ span {
   padding: 10vw 0;
 }
 
-.sub_tit {
-  color: #1567F4;
-  font-weight: bold;
-  font-size: clamp(12px, 1.5vw, 21vw);
-}
-
-.section_tit {
-  margin-top: 1vw;
-  color: #EC2AB2;
-  font-weight: bold;
-  font-size: clamp(24px, 3vw, 42px);
-}
-
 .message_text {
   width: 60vw;
   margin: 10vw auto 0;
@@ -161,12 +167,16 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3vw;
   width: 70vw;
+  max-width: 1000px;
   margin: 5vw auto 0;
 }
 
 .plus_message img {
   width: 22vw;
+  max-width: 300px;
+  min-width: 100px;
 }
 
 .plus_message_text {
@@ -218,7 +228,7 @@ span {
   justify-items: center;
   gap: 15px;
   width: 86vw;
-  max-width: 1440px;
+  max-width: 1310px;
   margin: 5vw auto 0;
 }
 
@@ -259,8 +269,8 @@ span {
 
 .form {
   margin-top: 5vw;
-  width: 80vw;
-  max-width: 1440px;
+  width: 100%;
+  max-width: 640px;
   height: 130vw;
 }
 
@@ -268,7 +278,7 @@ span {
 .footer {
   width: 80vw;
   max-width: 480px;
-  margin: 10vw auto 5vw;
+  margin: 20vw auto 5vw;
 }
 .footer h2 {
   margin-bottom: 1vw;
@@ -348,41 +358,40 @@ span {
   .openbtn{
     position:fixed;
     z-index: 9999;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 12px;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
+    width: 42.89px;
+    height: 42.89px;
   }
     
   .openbtn span{
     display: inline-block;
     transition: all .4s;
     position: absolute;
-    left: 14px;
+    left: 10%;
     height: 3px;
     border-radius: 2px;
     background-color: #666;
-    width: 45%;
+    width: 80%;
   }
 
   .openbtn span:nth-of-type(1) {
-    top:14px;
+    top: calc(25% - 1.5px);
   }
 
   .openbtn span:nth-of-type(2) {
-    top:24px;
+    top: calc(50% - 1.5px);
   }
 
   .openbtn span:nth-of-type(3) {
-    top:34px;
+    top: calc(75% - 1.5px);
   }
 
   .openbtn.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 45%;
+    top: calc(25% - 1.5px);
+    transform: translateY(10.7225px) rotate(-45deg);
+    width: 80%;
   }
 
   .openbtn.active span:nth-of-type(2) {
@@ -390,14 +399,25 @@ span {
   }
 
   .openbtn.active span:nth-of-type(3){
-    top: 30px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 45%;
+    top: calc(75% - 1.5px);
+    transform: translateY(-10.75225px) rotate(45deg);
+    width: 80%;
+  }
+
+  .header {
+    padding: 5px 12px;
   }
 
   .header nav ul {
     display: block;
+  }
+
+  .program,
+  .cost,
+  .access,
+  .contact,
+  .footer {
+    margin-top: 20vw;
   }
 
   .home {
@@ -420,9 +440,14 @@ span {
     padding: 2vw 3vw;
 
   }
+  .message_text,
+  .plus_message,
+  .program_wp,
+  .cost_wp img {
+    width: 86vw;
+  }
 
   .plus_message {
-    width: 80vw;
     margin-top: 12vw;
   }
 
@@ -437,10 +462,6 @@ span {
   .cost_wp {
     grid-template-columns: repeat(1, minmax(43vw, 1fr));
     justify-items: center;
-  }
-
-  .cost_wp img {
-    width: 80vw;
   }
 
   .map {
