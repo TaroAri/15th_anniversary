@@ -33,6 +33,7 @@ span {
   transform: translate(0, 0);
 } */
 
+
 /* common */
 .sub_tit {
   color: #1567F4;
@@ -47,7 +48,7 @@ span {
   font-size: clamp(24px, 3vw, 42px);
 }
 
-.header a:hover,
+.g-nav ul li a:hover,
 .access_text p a:hover,
 .sns_icons a img:hover {
   opacity: 0.6;
@@ -58,6 +59,7 @@ span {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,23 +90,71 @@ span {
 
 /* HOME */
 .home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.home_flex {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: end;
   gap: 3vw;
   width: 100%;
+  padding: 4vw;
+  color: #1567F4;
+}
+
+.red {
+  color: #EC2AB2;
+}
+
+.yellow {
+  color: #CFCB5F;
+}
+
+.green {
+  color: #78C070;
+}
+
+.video-area {
+  position: relative;
+  z-index: -1;
+  top: 0;
+  right:0;
+  left:0;
+  bottom:0;
   height: 100vh;
-  min-height: 800px;
-  padding: 2vw 4vw;
-  background-color: #E2E2E2;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.video {
+  /*天地中央配置*/
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*縦横幅指定*/
+  width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+  height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
 }
 
 .home_left {
+  font-weight: bold;
   text-align: left;
 }
 
 .date {
-  margin-bottom: 2vw;
+  margin-top: 1vw;
   font-size: clamp(40px, 7vw, 89px);
 }
 
@@ -113,36 +163,24 @@ span {
 }
 
 .home h1 {
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
+  letter-spacing: 0.5rem;
 }
 
 .home h1 span {
   margin-bottom: 1vw;
-  padding: 1vw;
   font-size: clamp(20px, 4vw, 42px);
   font-weight: bold;
-  background-color: #ffffff;
 }
 
-.home_left .home_text {
-  font-size: clamp(10px, 2vw, 17px);
-  font-weight: bold;
-  line-height: 2;
-}
-
-.home_right button {
-  padding: 1.2vw 2vw;
-  color: #ffffff;
-  background-color: #B8B8B8;
-  letter-spacing: 0.2rem;
+.home_right a img{
+  width: 12vw;
+  min-width: 100px;
   transition: .3s;
 }
 
-.home_right button:hover {
-  color: #B8B8B8;
-  font-weight: bold;
-  background-color: #ffffff;
-  transition: .3s;
+.home_right a img:hover {
+  scale: 1.2;
 }
 
 /* MESSAGE */
@@ -281,7 +319,7 @@ span {
 .footer {
   width: 80vw;
   max-width: 480px;
-  margin: 20vw auto 5vw;
+  margin: 10vw auto 5vw;
 }
 .footer h2 {
   margin-bottom: 1vw;
@@ -327,6 +365,7 @@ span {
     right: -120%;
     width: 100%;
     height: 100vh;
+    height: 100dvh;
     background:#fff;
     transition: all 0.6s;
   }
@@ -425,24 +464,25 @@ span {
   .home {
     flex-direction: column-reverse;
     justify-content: end;
-    height: 90vh;
     min-height: 500px;
   }
 
+  .home_flex {
+    display: block;
+  }
+
   .home_left {
-    order: 2;
     padding-bottom: 3vw;
   }
 
   .home_right {
-    order: 1;
     padding-bottom: 3vw;
   }
 
-  .home_right button {
-    padding: 4vw 5vw;
-
+  .home_right a img {
+    float: right;
   }
+
   .message_text,
   .plus_message,
   .program_wp,
@@ -469,5 +509,9 @@ span {
 
   .map {
     height: 80vw;
+  }
+
+  .footer {
+    margin-top: 20vw;
   }
 }
