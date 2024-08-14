@@ -163,7 +163,7 @@ span {
 }
 
 .home h1 {
-  margin-bottom: 5vw;
+  margin-bottom: 1vw;
   letter-spacing: 0.5rem;
 }
 
@@ -471,13 +471,13 @@ span {
     display: block;
   }
 
-  .home_left {
+  /* .home_left {
     padding-bottom: 3vw;
   }
 
   .home_right {
     padding-bottom: 3vw;
-  }
+  } */
 
   .home_right a img {
     float: right;
