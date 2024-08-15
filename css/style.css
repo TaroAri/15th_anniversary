@@ -506,6 +506,7 @@ span {
     display: block;
   }
 
+  .message,
   .program,
   .cost,
   .access,
