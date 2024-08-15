@@ -183,59 +183,113 @@ span {
   scale: 1.2;
 }
 
-/* MESSAGE */
-.yasuda_message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-image: url(../img/message_bg.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 10vw 0;
-}
-
-.message_text {
-  width: 60vw;
-  margin: 10vw auto 0;
+/* ABOUT */
+.about {
+  padding-top: 10vw;
   text-align: left;
-  font-weight: bold;
   line-height: 1.5;
 }
 
-.plus_message {
+.about article {
+  width: 86vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* MESSAGE */
+.message {
+  padding-top: 10vw;
+}
+
+.message_wp {
+  margin-top: 5vw;
+}
+
+.yasuda_message {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3vw;
+  gap: 1vw;
   width: 70vw;
   max-width: 1000px;
-  margin: 5vw auto 0;
+  margin: 0 auto;
 }
 
-.plus_message img {
-  width: 22vw;
+.yasuda_message img {
+  width: 25vw;
   max-width: 300px;
   min-width: 100px;
 }
 
-.plus_message_text {
+.yasuda_message_text {
   overflow-wrap: anywhere;
-  width: 40vw;
+  width: 45vw;
   text-align: left;
   font-family: "Noto Sans";
   font-size: clamp(12px, 1.5vw, 24px);
   font-weight: bold;
 }
 
-.plus_message_text h3 {
-  margin-bottom: 1vw;
+.yasuda_message_text h3 {
+  margin-bottom: 0.5vw;
+  font-size: clamp(16px, 2vw, 32px);
 }
 
-.plus_message_text article p {
-  margin-top: 3vw;
+.yasuda_message_text article p {
+  margin-top: 2vw;
   font-family: "Noto Sans JP";
-  font-size: clamp(10px, 1.3vw, 20px);
+  font-size: clamp(10px, 1.3vw, 15px);
+  color: #000;
+  line-height: 1.5;
+}
+
+.message_flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 86vw;
+  max-width: 1000px;
+  margin: 5vw auto 0;
+}
+
+.message_flex_inner {
+  display: flex;
+  justify-content: center;
+  height: 30vw;
+}
+
+.sugi {
+  align-items: start;
+}
+
+.chika {
+  align-items: end;
+  margin-bottom: 0;
+}
+
+.plus_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.plus_message img {
+  width: 17vw;
+  max-width: 280px;
+  min-width: 100px;
+}
+
+.plus_message_text {
+  text-align: left;
+  margin-left: 1.5vw;
+  white-space: nowrap;
+}
+
+.plus_message_text h3 {
+  font-size: clamp(16px, 2vw, 32px);
 }
 
 /* PROGRAM */
@@ -244,17 +298,15 @@ span {
 }
 
 .program_wp {
-  display: flex;
-  justify-content: center;
-  gap: 5vw;
-  width: 80%;
+  width: 75vw;
   max-width: 1000px;
   margin: 5vw auto 0;
-  padding: 5vw;
-  text-align: left;
   font-weight: bold;
-  background-color: #E2E2E2;
-  line-height: 1.5;
+  line-height: 2;
+}
+
+.program_wp span {
+  float: right;
 }
 
 /* COST */
@@ -490,16 +542,24 @@ span {
     width: 86vw;
   }
 
-  .plus_message {
-    margin-top: 12vw;
+  .yasuda_message {
+    display: block;
+  }
+
+  .yasuda_message_text {
+    width: auto;
   }
 
   .plus_message_text {
-    width: 55vw;
+    width: 40vw;
   }
-  
-  .plus_message_text article p {
-    margin-top: 2vw;
+
+  .message_flex {
+    display: block;
+  }
+
+  .message_flex_inner {
+    align-items: center;
   }
 
   .cost_wp {
