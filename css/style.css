@@ -20,20 +20,6 @@ span {
   display: inline-block;
 }
 
-/* .fade-in {
-  z-index: 1;
-  opacity: 0;
-  transition-duration: 1.7s;
-  transform: translate(0, 50px);
-}
-
-.scroll-in {
-  z-index: 1;
-  opacity: 1;
-  transform: translate(0, 0);
-} */
-
-
 /* common */
 .sub_tit {
   color: #1567F4;
@@ -94,6 +80,7 @@ span {
   width: 100%;
   height: 100vh;
   height: 100dvh;
+  min-height: 500px;
 }
 
 .home_flex {
@@ -151,6 +138,7 @@ span {
 .home_left {
   font-weight: bold;
   text-align: left;
+  text-shadow: 3px 2px 3px #FFF;
 }
 
 .date {
@@ -186,8 +174,7 @@ span {
 /* ABOUT */
 .about {
   padding-top: 10vw;
-  text-align: left;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .about article {
@@ -210,9 +197,9 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1vw;
-  width: 70vw;
-  max-width: 1000px;
+  gap: 1.5vw;
+  width: 86vw;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -225,6 +212,7 @@ span {
 .yasuda_message_text {
   overflow-wrap: anywhere;
   width: 45vw;
+  flex: 1;
   text-align: left;
   font-family: "Noto Sans";
   font-size: clamp(12px, 1.5vw, 24px);
@@ -239,17 +227,17 @@ span {
 .yasuda_message_text article p {
   margin-top: 2vw;
   font-family: "Noto Sans JP";
-  font-size: clamp(10px, 1.3vw, 15px);
+  font-size: clamp(10px, 1.3vw, 18px);
   color: #000;
   line-height: 1.5;
 }
 
 .message_flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   width: 86vw;
-  max-width: 1000px;
+  max-width: 1280px;
   margin: 5vw auto 0;
 }
 
@@ -286,6 +274,7 @@ span {
   text-align: left;
   margin-left: 1.5vw;
   white-space: nowrap;
+  font-weight: bold;
 }
 
 .plus_message_text h3 {
@@ -523,14 +512,6 @@ span {
   .home_flex {
     display: block;
   }
-
-  /* .home_left {
-    padding-bottom: 3vw;
-  }
-
-  .home_right {
-    padding-bottom: 3vw;
-  } */
 
   .home_right a img {
     float: right;
