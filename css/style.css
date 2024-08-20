@@ -348,8 +348,16 @@ span {
   padding-top: 10vw;
 }
 
+.form_info {
+  width: fit-content;
+  margin: 5vw auto 0;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
 .form {
-  margin-top: 5vw;
+  margin-top: 1vw;
   width: 100%;
   max-width: 640px;
   height: 130vw;
