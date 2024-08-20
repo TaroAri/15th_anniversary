@@ -294,10 +294,6 @@ span {
   line-height: 2;
 }
 
-.program_wp span {
-  float: right;
-}
-
 /* COST */
 .cost {
   padding-top: 10vw;
@@ -353,11 +349,11 @@ span {
   margin: 5vw auto 0;
   text-align: left;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .form {
-  margin-top: 1vw;
+  margin-top: 5vw;
   width: 100%;
   max-width: 640px;
   height: 130vw;
