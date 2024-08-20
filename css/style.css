@@ -206,7 +206,7 @@ span {
 .yasuda_message img {
   width: 25vw;
   max-width: 300px;
-  min-width: 100px;
+  min-width: 200px;
 }
 
 .yasuda_message_text {
@@ -267,7 +267,7 @@ span {
 .plus_message img {
   width: 17vw;
   max-width: 280px;
-  min-width: 100px;
+  min-width: 120px;
 }
 
 .plus_message_text {
@@ -550,6 +550,7 @@ span {
 
   .message_flex_inner {
     align-items: center;
+    height: 35vw;
   }
 
   .cost_wp {
