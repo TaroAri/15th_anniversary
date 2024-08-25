@@ -346,7 +346,7 @@ span {
 
 .form_info {
   width: fit-content;
-  margin: 5vw auto 0;
+  margin: 5vw auto;
   text-align: left;
   font-weight: bold;
   line-height: 1.7;
@@ -358,6 +358,25 @@ span {
   max-width: 640px;
   height: 130vw;
   max-height: 800px;
+}
+
+.contact a {
+  padding: 1vw 2vw;
+  background-color: #EC2AB2;
+  color: #FFF;
+  font-weight: bold;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+.contact a:hover {
+  outline: #EC2AB2 0.3vw solid;
+  outline-offset: -0.3vw;
+  background-color: #FFF;
+  color: #EC2AB2;
+  transition: .3s;
+  letter-spacing: 0.1rem;
+  box-sizing: border-box;
 }
 
 /* FOOTER */
@@ -556,6 +575,13 @@ span {
 
   .map {
     height: 80vw;
+  }
+
+  .contact a {
+    padding: 2vw 4vw;
+  }
+  .form_info {
+    margin: 5vw auto 20vw;
   }
 
   .footer {
