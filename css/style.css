@@ -359,7 +359,7 @@ span {
   gap: 4vw;
   padding: 3vw 0;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .time_point {
@@ -616,6 +616,7 @@ span {
 
   .par_number_flex {
     padding: 7vw 0;
+    line-height: 1.8;
   }
 
   .form_info {
