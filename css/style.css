@@ -356,7 +356,7 @@ span {
 
 .par_number_flex {
   display: flex;
-  gap: 4vw;
+  justify-content: space-around;
   padding: 3vw 0;
   text-align: left;
   line-height: 1.7;
@@ -367,12 +367,20 @@ span {
   text-align: right;
 }
 
+.time_point span{
+  margin-bottom: 1vh;
+}
+
 .form_info {
   width: fit-content;
   margin: 5vw auto;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
   line-height: 1.7;
+}
+
+.form_info span{
+  margin-bottom: 1vh;
 }
 
 .form {
