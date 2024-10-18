@@ -372,7 +372,7 @@ span {
 }
 
 .form_info {
-  width: fit-content;
+  width: 50vw;
   margin: 5vw auto;
   text-align: center;
   font-weight: bold;
@@ -628,6 +628,7 @@ span {
   }
 
   .form_info {
+    width: 90vw;
     margin: 5vw auto 20vw;
   }
 
