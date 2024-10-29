@@ -512,7 +512,7 @@ span {
 }
 
 .layer_board .popup_shopName {
-  font-size: clamp(10px, 3vw, 30px);
+  font-size: clamp(12px, 3vw, 30px);
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -522,7 +522,7 @@ span {
 }
 
 .popup_note {
-  font-size: clamp(7px, 1.3vw, 25px);
+  font-size: clamp(10px, 1.3vw, 25px);
 }
 
 
@@ -709,5 +709,17 @@ span {
 
   .footer {
     margin-top: 20vw;
+  }
+
+  .layer_board p {
+    margin-bottom: 30px;
+  }
+
+  .layer_board .popup_shopName {
+    margin-bottom: 15px;
+  }
+  
+  .layer_board .popup_address {
+    margin-bottom: 10px;
   }
 }
