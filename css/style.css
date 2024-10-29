@@ -472,33 +472,44 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: #fff;
+  background: #ffdef4;
   text-align: center;
   z-index: 2000;
   padding: 50px;
+  border-radius: 15px;
 }
 
 .layer_board p {
+  max-width: 600px;
   margin-bottom: 50px;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .btn_close {
   display: block;
   text-decoration: none;
-  background: #000;
+  background: #EC2AB2;
   color: #fff;
   text-align: center;
-  padding: 20px 40px;
+  padding: 10px 20px;
   width: 200px;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
-.ss {
+.layer_board .popup_tit {
   font-size: 30px;
   font-weight: bold;
+  color: #EC2AB2;
+  line-height: 1.2;
+  text-align: center;
+  font-size: clamp(20px, 4vw, 42px)
 }
 
-
+.btn_close:hover {
+  opacity: 0.6;
+}
 
 
 @media screen and (max-width: 500px) {
