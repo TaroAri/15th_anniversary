@@ -480,7 +480,7 @@ span {
 }
 
 .layer_board p {
-  max-width: 600px;
+  max-width: 550px;
   margin-bottom: 50px;
   line-height: 1.5;
   text-align: left;
@@ -504,11 +504,25 @@ span {
   color: #EC2AB2;
   line-height: 1.2;
   text-align: center;
-  font-size: clamp(20px, 4vw, 42px)
+  font-size: clamp(20px, 4vw, 42px);
 }
 
 .btn_close:hover {
   opacity: 0.6;
+}
+
+.layer_board .popup_shopName {
+  font-size: clamp(10px, 3vw, 30px);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.layer_board .popup_address {
+  margin-bottom: 20px;
+}
+
+.popup_note {
+  font-size: clamp(7px, 1.3vw, 25px);
 }
 
 
