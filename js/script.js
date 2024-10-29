@@ -32,17 +32,15 @@ $(".openbtn").click(function () {//ボタンがクリックされたら
 	});
 });
 
-//フェードイン
-let fadeInTarget = document.querySelectorAll('.fade-in');
-window.addEventListener('scroll', () => {
-  for (let i = 0; i < fadeInTarget.length; i++) {
-    const rect = fadeInTarget[i].getBoundingClientRect().top;
-    const scroll = document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
-    if (scroll > offset - windowHeight + 150) {
-      fadeInTarget[i].classList.add('scroll-in');
-    }
-  }
-});
+//ロード時のモーダル表示処理
+$(function(){
+	$('#layer_board_area').layerBoard({
+	delayTime: 100, //表示までの待ち時間
+	fadeTime : 300, //表示開始から表示しきるまでの時間
+	limitMin : 0, //何分経過後に再度表示するか/分（0で再表示なし）
+	easing: 'linear', //イージング
+	limitCookie : 0 , //cookie保存期間/日（0で開くたび毎回表示される）
+	countCookie : 1000 //何回目のアクセスまで適用するか(cookie保存期間でリセット)
+	});
+	})
 
